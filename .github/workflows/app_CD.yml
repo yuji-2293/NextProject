@@ -9,7 +9,7 @@ on:
       - '.github/workflows/app_CD.yml'
 defaults:
   run:
-    working-directory: my-app
+    working-directory: .
 
 env:
   NODE_VERSION: '22'
