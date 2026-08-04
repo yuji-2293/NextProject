@@ -3,20 +3,20 @@ name: app_ci
 on:
   workflow_dispatch:
   pull_request:
-    branches: ["main"]
+    branches: ['main']
     paths:
-      - "my-app/**"
-      - ".github/workflows/app_CI.yml"
+      - 'my-app/**'
+      - '.github/workflows/app_CI.yml'
   push:
-    branches: ["main"]
+    branches: ['main']
     paths:
-      - "my-app/**"
-      - ".github/workflows/app_CI.yml"
+      - 'my-app/**'
+      - '.github/workflows/app_CI.yml'
 
 env:
-  NODE_VERSION: "22"
-  PNPM_VERSION: "10.13.1"
-  DEBUG_MESSAGE: "CI実行!!"
+  NODE_VERSION: '22'
+  PNPM_VERSION: '10.13.1'
+  DEBUG_MESSAGE: 'CI実行!!'
 
 jobs:
   Launch:
@@ -35,7 +35,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: "pnpm"
+          cache: 'pnpm'
           cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
@@ -58,7 +58,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: "pnpm"
+          cache: 'pnpm'
           cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
@@ -82,7 +82,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: "pnpm"
+          cache: 'pnpm'
           cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
@@ -112,7 +112,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: "pnpm"
+          cache: 'pnpm'
           cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
