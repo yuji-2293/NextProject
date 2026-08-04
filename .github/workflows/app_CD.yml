@@ -1,4 +1,4 @@
-name: Front/CD
+name: app_cd
 
 on:
   workflow_dispatch:

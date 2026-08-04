@@ -1,4 +1,4 @@
-name: Front/CI
+name: app_ci
 
 on:
   workflow_dispatch:
@@ -12,9 +12,6 @@ on:
     paths:
       - "my-app/**"
       - ".github/workflows/app_CI.yml"
-defaults:
-  run:
-    working-directory: my-app/**
 
 env:
   NODE_VERSION: "22"
