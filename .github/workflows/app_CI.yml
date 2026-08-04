@@ -14,7 +14,7 @@ on:
       - ".github/workflows/my-app_CI.yml"
 defaults:
   run:
-    working-directory: my-app
+    working-directory: my-app/**
 
 env:
   NODE_VERSION: "22"
