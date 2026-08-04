@@ -6,12 +6,12 @@ on:
     branches: ["main"]
     paths:
       - "my-app/**"
-      - ".github/workflows/my-app_CI.yml"
+      - ".github/workflows/app_CI.yml"
   push:
     branches: ["main"]
     paths:
       - "my-app/**"
-      - ".github/workflows/my-app_CI.yml"
+      - ".github/workflows/app_CI.yml"
 defaults:
   run:
     working-directory: my-app/**
