@@ -5,14 +5,16 @@ on:
   pull_request:
     branches: ['main']
     paths:
-      - '**'
+      - 'my-app/**'
       - '.github/workflows/app_CI.yml'
   push:
     branches: ['main']
     paths:
-      - '**'
+      - 'my-app/**'
       - '.github/workflows/app_CI.yml'
-
+defaults:
+  run:
+    working-directory: .
 env:
   NODE_VERSION: '22'
   PNPM_VERSION: '10.13.1'
