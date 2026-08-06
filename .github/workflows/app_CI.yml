@@ -5,12 +5,12 @@ on:
   pull_request:
     branches: ['main']
     paths:
-      - 'my-app/**'
+      - '**'
       - '.github/workflows/app_CI.yml'
   push:
     branches: ['main']
     paths:
-      - 'my-app/**'
+      - '**'
       - '.github/workflows/app_CI.yml'
 defaults:
   run:
